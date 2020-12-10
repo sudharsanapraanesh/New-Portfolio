@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-black: #0a0a0a;
+    --color-white: #c73131;
+    --color-border: #c22a2a;
+    --font-staat: 'Staatliches', cursive;
+    --font-os:  'Oswald', sans-serif;
+    --font-ram: 'Rambla', sans-serif;
+}
+#home h1{
+    font-family: 'Rambla', sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* global classes */
+.font-staat{
+    font: normal 400 18px var(--font-staat);
+}
+.font-os{
+    font: normal 300 18px var(--font-os);
+}
+.font-ram{
+    font: normal bold 18px var(--font-ram);
+}
+
+.font-size-40{
+    font-size: 40px;
+}
+.font-size-34{
+    font-size: 34px;
+}
+.font-size-27{
+    font-size: 27px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+
+.bgcolor-black{
+    background-color: var(--color-black);
+}
+
+/* #global classes */
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:1;
+    transition: left .5s ease;
+}
+
+#header nav{
+    height: 100vh;
+}
+#header .site-title .navbar-brand{
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+
+#header .nav-link{
+    margin: .7rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+}
+
+#header .nav-link:hover{
+    color: var(--color-white) !important;
+}
+
+#header .toggle-button{
+    background: none;
+    color: var(--color-black);
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 1px solid var(--color-border);
+}
+
+.toggle-left{
+    left: 0 !important;
+    width: 1000px !important;
+}
+
+.skill .bars p, .site-content .skill .bars span{
+    line-height: 10px;
+}
+
+#footer form .row .col input[type="text"],
+#footer form .row .col input[type="email"],
+#footer form textarea{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(194, 57, 57);
+    padding: 1.5rem 1rem;
+}
+#social{
+    justify-content: space-evenly;
+}
+#social a{
+      border:1px solid rgb(189, 32, 58);
+      padding: 0.5rem;
+}
+#social a:hover{
+     background-color: red;
+}
+
+@media screen and (min-width: 768px){
+    .toggle-button{
+        display: none;
+    }
+    #header{
+        z-index:0;
+    }
+}
+/* #site-main */
